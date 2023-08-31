@@ -1,4 +1,4 @@
-<h1>Linuq | Manage Authorization  </h1>
+<h1>Linux | Manage Authorization  </h1>
 
 
 <h2>Description</h2>
