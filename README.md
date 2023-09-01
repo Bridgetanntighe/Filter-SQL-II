@@ -1,32 +1,24 @@
-<h1>Filter with AND, OR, and NOT  </h1>
+<h1>Analyze a packet with Wireshark  </h1>
 
 
-<h2>Task 1. Retrieve after hours failed login attempts </h2>
-The team is investigating failed login attempts that were made after business hours. I will work to retrieve this information from the login activity. I’ll identify all unsuccessful attempts after 18:00. <br>
-
-The login_time column in the <i>log_in_attempts</i> table contains information on when login attempts were made. Office hours end at '18:00'<br>
-The <i>success</i> column in the <i>log_in_attempts</i> table contains values of <i>TRUE</i> or <i>FALSE</i> to indicate whether the login was successful.<br> MySQL stores Boolean values as <i>1</i> for <i>TRUE</i>, and <i>0</i> for <i>FALSE</i>. This means that <i>TRUE</i> is represented as <i>1</i>, and <i>FALSE</i> represented as <i>0</i> in the <i>success</i> column. <br>
-<img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/82e9ed58-be1d-4515-8a30-cea3534369f2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-<h2>Task 2. Retrieve login attemps on specific dates</h2>
-The team is investigating a suspicious event that occurred on <i>'2022-05-09'</i>.<br> I will retrieve all login attempts that occurred on this day and the day before <i>('2022-05-08')</i>.
-
-The login_date column in the <i>log_in_attempts</i> table contains information on the dates when login attempts were made.
-<img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/05cae5a3-6ad5-467c-8585-f75d81a34f8b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h2>Description</h2>
+Analyzing packets can help security teams interpret and understand network communications. Network protocol analyzers such as Wireshark, which has a graphical user interface or GUI, can help examine packet data during your investigations. Since network packet data is complex, network protocol analyzers (packet sniffers) like Wireshark are designed to help find patterns and filter the data in order to focus on the network traffic that is most relevant to your security investigations.
 
 
-<h2>Task 3. Retrieve login attempts outside of Mexico</h2>
-The team is investigating logins that did not originate in Mexico. The country field includes entries with <i>'MEX'</i> and <i>'MEXICO'</i>. I will use the <i>NOT</i> and <i>LIKE</i> operators and the matching pattern <i>'MEX%'</i>.
-<img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/85ce7fdf-2281-4ae7-ae18-6f0cd672988a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h2>Task 1. Apply a basic Wireshark filter and inspect a packet</h2>
+Below shows Port 80 is the TCP destination port for this packet. It contains the initial web request to an HTTP website that will typically be listening on TCP port 80. <br>
+<img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/553b5bf4-0fd7-4d74-82f0-c957d2a058aa" height="50%" width="50%" alt="Active Directory Lab"/>
 
-<h2>Task 4. Retrieve employees in Marketing</h2>
-The team is updating employee machines, I will obtain the information about employees in the 'Marketing' department who are located in all offices in the East building (such as <i>'East-170'</i> or <i>'East-320'</i>).<br>
-<img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/1ca93651-3090-4103-b044-c283011c1c90" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
-<h2>Task 5. Retrieve employees in Finance or Sales</h2>
-The team needs to perform a different update to the computers of all employees in the Finance or the Sales department.
-<img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/fab5a165-108d-41c9-8a89-bf9e690a0b85" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<h2>Task 2. Use filters to select packets</h2>
+TCP is the internal protocol contained in the first packet from MAC address 42:01:ac:15:e0:02.
+<img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/38a013dc-c2a9-4164-8081-395885ac97ba" height="50%" width="50%" alt="Active Directory Lab"/>
 
-<h2>Task 6. Retrieve all employees not in IT</h2>
-The team needs to make one more update. This update was already made to employee computers in the Information Technology department. The team needs information about employees who are not in that department.<br>
-<img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/c97f067e-fdc0-44bd-a896-769daf5fd04f" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+<h2>Task 3. Use filters to explore DNS packets:</h2>
+The IP address 142.250.1.139 is displayed in the expanded Answers section for the DNS query for opensource.google.com.
+<img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/e240ad3a-0a09-4e60-9c7c-d67b512c4afe" height="80%" width="80%" alt="Active Directory Lab"/>
+
+<h2>Task 5. Use filters to explore TCP packets:</h2>
+This filters to packets containing web requests made with the <i>curl</i> command in this sample packet capture file.
+<img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/bfec4b33-2cb7-44f4-9885-78f89ff4d444 height="80%" width="80%" alt="Active Directory Lab"/>
