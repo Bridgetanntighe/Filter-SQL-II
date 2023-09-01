@@ -15,10 +15,10 @@ TCP is the internal protocol contained in the first packet from MAC address 42:0
 <img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/38a013dc-c2a9-4164-8081-395885ac97ba" height="50%" width="50%" alt="Active Directory Lab"/>
 
 
-<h2>Task 3. Use filters to explore DNS packets:</h2>
+<h2>Task 3. Use filters to explore DNS packets</h2>
 The IP address 142.250.1.139 is displayed in the expanded Answers section for the DNS query for opensource.google.com.
 <img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/e240ad3a-0a09-4e60-9c7c-d67b512c4afe" height="80%" width="80%" alt="Active Directory Lab"/>
 
-<h2>Task 5. Use filters to explore TCP packets:</h2>
+<h2>Task 5. Use filters to explore TCP packets</h2>
 This filters to packets containing web requests made with the <i>curl</i> command in this sample packet capture file.
 <img src="https://github.com/Bridgetanntighe/FilterSQLTheory/assets/134883216/bfec4b33-2cb7-44f4-9885-78f89ff4d444 height="80%" width="80%" alt="Active Directory Lab"/>
