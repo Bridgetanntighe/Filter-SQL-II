@@ -1,14 +1,6 @@
 <h1>Filter with AND, OR, and NOT  </h1>
 
 
-<h2>Description</h2>
-As a security analyst, I'll need to analyze data. And often finding the specific data I’ll need depends on more than one factor.
-
-To retrieve specific pieces of information from the database, I can filter for multiple conditions. I can also filter for what does not match a particular condition.
-
-In this lab activity, I’ll use the AND, OR, and NOT operators to create more complex filters for SQL queries.
-
-<br />
 
 
 <h2>Task 1. Retrieve after hours failed login attempts </h2>
@@ -24,11 +16,11 @@ The team is investigating a suspicious event that occurred on <i>'2022-05-09'</i
 The login_date column in the <i>log_in_attempts</i> table contains information on the dates when login attempts were made.
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<h2>Task 3. Retrieve login attempts outside of Mexico:</h2>
+<h2>Task 3. Retrieve login attempts outside of Mexico</h2>
 The team is investigating logins that did not originate in Mexico. Note that the country field includes entries with <i>'MEX'</i> and <i>'MEXICO'</i>. I will use the <i>NOT</i> and <i>LIKE</i> operators and the matching pattern <i>'MEX%'</i>.
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<h2>Task 4. Retrieve employees in Marketing:</h2>
+<h2>Task 4. Retrieve employees in Marketing</h2>
 The team is updating employee machines, I need to obtain the information about employees in the 'Marketing' department who are located in all offices in the East building (such as <i>'East-170'</i> or <i>'East-320'</i>).<br>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -40,10 +32,3 @@ The team needs to perform a different update to the computers of all employees i
 The team needs to make one more update. This update was already made to employee computers in the Information Technology department. The team needs information about employees who are not in that department.<br>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-
-<h2>Conclusion </h2>
-This demonstates practical experience using basic Linux Bash shell commands to
-
-- examine file and directory permissions, <br>
-- change permissions on files, and<br>
-- change permissions on directories.
